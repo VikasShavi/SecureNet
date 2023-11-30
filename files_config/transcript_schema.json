@@ -1,0 +1,93 @@
+{
+    "schemaName": "logslabelled",
+    "dimensionFieldSpecs": [
+      {
+        "name": "Dur",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "TotPkts",
+        "dataType": "INT"
+      },
+      {
+        "name": "TotBytes",
+        "dataType": "INT"
+      },
+      {
+        "name": "SrcBytes",
+        "dataType": "INT"
+      },
+      {
+        "name": "Proto_tcp",
+        "dataType": "INT"
+      },
+      {
+        "name": "Proto_udp",
+        "dataType": "INT"
+      },
+      {
+        "name": "Dir_one",
+        "dataType": "INT"
+      },
+      {
+        "name": "sTosone",
+        "dataType": "INT"
+      },
+      {
+        "name": "Proto_others",
+        "dataType": "INT"
+      },
+      {
+        "name": "Dir_others",
+        "dataType": "INT"
+      },
+      {
+        "name": "Proto",
+        "dataType": "STRING"
+      },
+      {
+        "name": "SrcAddr",
+        "dataType": "STRING"
+      },
+      {
+        "name": "Sport",
+        "dataType": "INT"
+      },
+      {
+        "name": "Dir",
+        "dataType": "STRING"
+      },
+      {
+        "name": "DstAddr",
+        "dataType": "STRING"
+      },
+      {
+        "name": "Dport",
+        "dataType": "INT"
+      },
+      {
+        "name": "State",
+        "dataType": "STRING"
+      },
+      {
+        "name": "sTos",
+        "dataType": "STRING"
+      },
+      {
+        "name": "dTos",
+        "dataType": "DOUBLE"
+      }
+    ],
+    "metricFieldSpecs": [
+      {
+        "name": "prediction",
+        "dataType": "FLOAT"
+      }
+    ],
+    "dateTimeFieldSpecs": [{
+      "name": "StartTime",
+      "dataType": "STRING",
+      "format" : "SIMPLE_DATE_FORMAT|yyyy-MM-dd HH:mm:ss",
+      "granularity": "1:MILLISECONDS"
+    }]
+  }
