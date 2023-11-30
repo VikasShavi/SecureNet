@@ -25,6 +25,7 @@ Apache Pinot acts as a consumer, ingesting data from the "logslabelled" Kafka to
 ### 5. Streamlit Dashboard
 
 The final component is a Streamlit dashboard that fetches data from Apache Pinot. The dashboard displays key metrics and insights derived from the labeled log data. This visualization aids in better defending against network attacks by providing a real-time overview of network security.
+![screenshot (2)](https://github.com/VikasShavi/SecureNet/assets/83757578/dec99a84-e91d-4fbe-971f-cc2ef798ed6a)
 
 ## Getting Started
 
