@@ -1,0 +1,10 @@
+zookeeper-server-start /opt/homebrew/etc/zookeeper/zoo.cfg
+kafka-server-start /opt/homebrew/etc/kafka/server.properties
+pinot-admin StartController -zkAddress localhost:2181 -clusterName PinotCluster -controllerPort 9001
+pinot-admin StartBroker -zkAddress localhost:2181 -clusterName PinotCluster -brokerPort 7001
+pinot-admin StartServer -zkAddress localhost:2181 -clusterName PinotCluster -serverPort 8001 -serverAdminPort 8011
+
+pinot-admin AddTable \
+    -schemaFile files_config/transcript_schema.json \
+    -tableConfigFile files_config/transcript_table_realtime.json \
+    -controllerPort 9001 -exec
